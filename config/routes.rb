@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   root to: 'cocktails#index' # always the first one
 
-    # resources :restaurants
+    # resources :restaurants, only:[:index, :new, :show]
     # READ
     get 'cocktails',     to: 'cocktails#index'
 
